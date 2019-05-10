@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "title": "Test Threat Model",
+    "owner": "Cory Dunn",
+    "description": "I'm checking things"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Cory Dunn"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Test Model",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Ryan Kara"
+  }
+}
