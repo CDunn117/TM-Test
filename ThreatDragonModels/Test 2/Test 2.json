@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "title": "Test 2",
+    "owner": "Cory Dunn",
+    "description": "More Checking"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Cory Dunn"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Test 2",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Lou Vitullo"
+  }
+}
