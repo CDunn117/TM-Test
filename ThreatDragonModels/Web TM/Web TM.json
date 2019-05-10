@@ -14,7 +14,99 @@
       {
         "title": "Pictures",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 415,
+                "y": 182
+              },
+              "angle": 0,
+              "id": "32b0f3d8-b17e-4da2-b2bb-22636d783d0b",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 519,
+                "y": 169
+              },
+              "target": {
+                "x": 425,
+                "y": 310
+              },
+              "vertices": [
+                {
+                  "x": 519,
+                  "y": 166
+                },
+                {
+                  "x": 589,
+                  "y": 255
+                },
+                {
+                  "x": 528,
+                  "y": 332
+                }
+              ],
+              "id": "23551643-eaf5-4b5f-abe3-8e880a4f5e66",
+              "z": 2,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 424,
+                "y": 307
+              },
+              "target": {
+                "x": 513,
+                "y": 161
+              },
+              "vertices": [
+                {
+                  "x": 348,
+                  "y": 247
+                },
+                {
+                  "x": 368,
+                  "y": 161
+                },
+                {
+                  "x": 439,
+                  "y": 123
+                }
+              ],
+              "id": "243fb1c8-14dd-4490-a3dc-bc9341464bfc",
+              "z": 3,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ],
     "reviewer": "Other Person"
