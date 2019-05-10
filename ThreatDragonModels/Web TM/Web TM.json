@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "title": "Web TM",
+    "owner": "Person",
+    "description": "Descriptive Words"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Another Person"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Pictures",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Other Person"
+  }
+}
