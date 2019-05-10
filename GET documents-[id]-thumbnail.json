@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "title": "GET documents-[id]-thumbnail",
+    "owner": "Chris Duxbury"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "GET documents-[id]-thumbnail",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0,
+        "$$hashKey": "object:16",
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 436,
+                "y": 228
+              },
+              "angle": 0,
+              "id": "b672dde8-2680-4a7f-99ef-4244dbc05fc0",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "ShareBase API"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 801,
+                "y": 239
+              },
+              "angle": 0,
+              "id": "c3b1bc59-ed1c-44ea-84dc-e354c264c0e7",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 2"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b672dde8-2680-4a7f-99ef-4244dbc05fc0"
+              },
+              "target": {
+                "id": "c3b1bc59-ed1c-44ea-84dc-e354c264c0e7"
+              },
+              "vertices": [
+                {
+                  "x": 670,
+                  "y": 191
+                }
+              ],
+              "id": "5c0cd2af-f945-4e5d-a237-12995e0e97e9",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DB",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Internal Communication",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isOutOfScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c3b1bc59-ed1c-44ea-84dc-e354c264c0e7"
+              },
+              "target": {
+                "id": "b672dde8-2680-4a7f-99ef-4244dbc05fc0"
+              },
+              "vertices": [
+                {
+                  "x": 668,
+                  "y": 355
+                }
+              ],
+              "id": "0911b32e-afff-4b46-b58b-92a0c1acb7fc",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DB",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Internal Communication",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isOutOfScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 46,
+                "y": 243
+              },
+              "angle": 0,
+              "id": "dcbf092c-4491-4726-b776-d636965b07e7",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "ShareBase Web"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "dcbf092c-4491-4726-b776-d636965b07e7"
+              },
+              "target": {
+                "id": "b672dde8-2680-4a7f-99ef-4244dbc05fc0"
+              },
+              "vertices": [
+                {
+                  "x": 322,
+                  "y": 191
+                }
+              ],
+              "id": "ddc5670f-6aa0-4b86-8f61-cec160340a56",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "GET /documents/:id/t\nhumbnail",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "title": "Access Token in plain text on the Query String",
+                  "type": "Elevation of privilege",
+                  "description": "The Query String contains the Access Token in plain text",
+                  "mitigation": "This was fixed in SBWEBV2-274\nhttps://jira.hylandqa.net/browse/SBWEBV2-274",
+                  "$$hashKey": "object:76"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b672dde8-2680-4a7f-99ef-4244dbc05fc0"
+              },
+              "target": {
+                "id": "dcbf092c-4491-4726-b776-d636965b07e7"
+              },
+              "vertices": [
+                {
+                  "x": 316,
+                  "y": 352
+                }
+              ],
+              "id": "984e5f9c-75a3-4a5a-afb1-8260959e9ff9",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "GET /documents/:id/t\nhumbnail",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 422,
+                "y": 52
+              },
+              "target": {
+                "x": 376,
+                "y": 543
+              },
+              "vertices": [
+                {
+                  "x": 242,
+                  "y": 253
+                }
+              ],
+              "id": "678abe42-699e-465d-abfe-69423827f290",
+              "z": 10,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 985
+        }
+      }
+    ],
+    "reviewer": "Cory Dunn"
+  }
+}
